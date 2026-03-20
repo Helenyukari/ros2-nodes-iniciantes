@@ -1,24 +1,4 @@
-"""
-=== TUTORIAL: Publisher Básico em ROS2 ===
-
-O que este node faz:
-  - Cria um "publisher" (publicador) que envia mensagens de texto
-  - Publica no tópico '/meu_topico' a cada 1 segundo
-  - Cada mensagem contém um contador que incrementa
-
-Conceitos que você vai aprender:
-  1. Como criar um Node (nó) em ROS2
-  2. Como criar um Publisher para enviar dados
-  3. Como usar um Timer para executar algo periodicamente
-  4. Como rodar o node corretamente
-
-Como rodar:
-  Terminal 1: ros2 run meu_primeiro_pacote publisher
-  Terminal 2: ros2 run meu_primeiro_pacote subscriber  (para ver as mensagens)
-
-Diagrama:
-  [publisher] ---String---> /meu_topico ---String---> [subscriber]
-"""
+# Publisher básico - envia mensagens de texto no tópico /meu_topico a cada 1s
 
 # =====================================================
 # IMPORTS - Bibliotecas necessárias

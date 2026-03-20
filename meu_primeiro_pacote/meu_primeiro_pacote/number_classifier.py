@@ -1,24 +1,5 @@
-"""
-=== NODE DE ESTUDO: Classificador de Números ===
-
-Propósito de estudo:
-  - Praticar criação de subscriber com processamento de dados
-  - Diferente do subscriber básico que só imprime, este PROCESSA a mensagem
-  - Mostra que um subscriber pode fazer lógica com os dados recebidos
-
-O que faz:
-  - Recebe números inteiros do tópico /random_number
-  - Classifica cada número como PAR ou ÍMPAR
-  - Mostra o resultado no terminal
-
-Fluxo:
-  [random_publisher] --Int32--> /random_number --Int32--> [number_classifier]
-       (gera números)                                    (classifica par/ímpar)
-
-Como rodar:
-  Terminal 1: ros2 run meu_primeiro_pacote random_publisher
-  Terminal 2: ros2 run meu_primeiro_pacote number_classifier
-"""
+# Subscriber de estudo - recebe números do /random_number e classifica como par/ímpar
+# Funciona em dupla com o random_publisher.py
 
 import rclpy
 from rclpy.node import Node

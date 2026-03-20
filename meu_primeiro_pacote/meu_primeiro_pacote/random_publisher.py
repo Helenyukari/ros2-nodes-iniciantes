@@ -1,19 +1,5 @@
-"""
-=== NODE DE ESTUDO: Publisher de Números Aleatórios ===
-
-Propósito de estudo:
-  - Praticar criação de publisher com tipo de mensagem DIFERENTE (Int32 em vez de String)
-  - Entender que ROS2 suporta vários tipos de dados
-  - Este node trabalha em DUPLA com o number_classifier.py
-
-Fluxo:
-  [random_publisher] --Int32--> /random_number --Int32--> [number_classifier]
-       (gera números)                                    (classifica par/ímpar)
-
-Como rodar:
-  Terminal 1: ros2 run meu_primeiro_pacote random_publisher
-  Terminal 2: ros2 run meu_primeiro_pacote number_classifier
-"""
+# Publisher de estudo - publica números aleatórios (Int32) no tópico /random_number
+# Funciona em dupla com o number_classifier.py
 
 import rclpy
 from rclpy.node import Node

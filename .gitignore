@@ -1,0 +1,7 @@
+build/
+install/
+log/
+.claude/
+*.docx
+system_interfaces.md
+Fluxo_behavior.md

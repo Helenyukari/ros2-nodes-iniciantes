@@ -1,24 +1,4 @@
-"""
-=== TUTORIAL: Subscriber Básico em ROS2 ===
-
-O que este node faz:
-  - Cria um "subscriber" (assinante) que RECEBE mensagens de texto
-  - Escuta o tópico '/meu_topico' e mostra no terminal o que recebeu
-
-Conceitos que você vai aprender:
-  1. Como criar um Subscriber para receber dados
-  2. Como funciona o callback (função chamada quando chega uma mensagem)
-  3. Como Publisher e Subscriber se comunicam pelo tópico
-
-Como rodar:
-  Terminal 1: ros2 run meu_primeiro_pacote publisher    (envia as mensagens)
-  Terminal 2: ros2 run meu_primeiro_pacote subscriber   (recebe as mensagens)
-
-  IMPORTANTE: Rode o subscriber PRIMEIRO ou ao mesmo tempo que o publisher!
-
-Diagrama:
-  [publisher] ---String---> /meu_topico ---String---> [subscriber] <-- VOCÊ ESTÁ AQUI
-"""
+# Subscriber básico - recebe mensagens de texto do tópico /meu_topico
 
 # =====================================================
 # IMPORTS
