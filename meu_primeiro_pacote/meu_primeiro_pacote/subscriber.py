@@ -29,12 +29,7 @@ class MeuSubscriber(Node):
         #
         # NOTA: o tópico conecta publisher e subscriber pelo NOME
         #       Se o nome for diferente, eles não se comunicam!
-        self.subscription = self.create_subscription(
-            String,
-            'meu_topico',
-            self.listener_callback,
-            10
-        )
+        self.subscription = self.create_subscription(String,'meu_topico',self.listener_callback,10)
 
         self.get_logger().info('Subscriber iniciado! Escutando /meu_topico')
 

@@ -1,5 +1,6 @@
 # Guia Iniciante de ROS2 (Robot Operating System 2)
 
+
 ## O que é o ROS2?
 
 ROS2 é um **framework open-source para desenvolvimento de robôs**. Ele fornece ferramentas, bibliotecas e convenções para facilitar a criação de software robótico complexo. Pense nele como um "sistema operacional" que permite diferentes partes do seu robô se comunicarem entre si.
