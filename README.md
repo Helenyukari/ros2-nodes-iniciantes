@@ -37,21 +37,11 @@ ROS2_nodes/
 - **Linux Ubuntu 22.04** (recomendado) ou WSL2 no Windows
 - **ROS2 Humble** instalado (passo a passo no [tutorial_ros2.md](tutorial_ros2.md))
 - **Python 3.10+** (vem com o Ubuntu 22.04)
----
-
-## Fluxo geral de quem está chegando
-
-1. Lê o `tutorial_ros2.md` e instala o ROS2.
-2. Clona este repo dentro de `~/ros2_ws/src/` (o workspace ROS2 padrão).
-3. Compila com `colcon build` na raiz do workspace.
-4. Roda os exemplos do `meu_primeiro_pacote` para ver publishers e subscribers em ação.
-5. Lê o `conceitos_avancados.md` quando quiser entender interfaces customizadas, services e launch files.
 
 ---
 
-## Convenções do repositório
+## Quer explorar mais?
 
-- **Idioma:** português nos comentários e docs (é o idioma do time).
-- **Nomes de nodes:** `snake_case` (ex.: `random_publisher`, `web_bridge`).
-- **Nomes de tópicos:** `snake_case` sem barra inicial no código (`random_number`), o ROS2 adiciona o `/` automaticamente.
-- **Tipos de mensagem:** sempre que possível use os de `std_msgs` ou `geometry_msgs` antes de criar uma interface custom.
+Documentação oficial do ROS2 Humble: **[docs.ros.org/en/humble](https://docs.ros.org/en/humble/index.html)**
+
+Lá você encontra tutoriais avançados, referência de API (`rclpy`, `rclcpp`), guia de pacotes oficiais (`nav2`, `moveit`, etc.) e troubleshooting. Sempre confira que está navegando na seção da distro **Humble** — a doc tem versões para outras distros e os comandos podem diferir.
