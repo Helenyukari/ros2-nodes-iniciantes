@@ -18,12 +18,7 @@ class NumberClassifier(Node):
         # Cria subscriber no tópico 'random_number'
         # Parâmetros: (tipo_msg, nome_topico, callback, tamanho_fila)
         # O callback é chamado automaticamente quando chega um número
-        self.subscription = self.create_subscription(
-            Int32,
-            'random_number',
-            self.listener_callback,
-            10
-        )
+        self.subscription = self.create_subscription(Int32,'random_number',self.listener_callback,10)
 
         self.get_logger().info('Number Classifier iniciado! Escutando /random_number')
 

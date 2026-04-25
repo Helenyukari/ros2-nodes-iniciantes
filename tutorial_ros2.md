@@ -7,6 +7,33 @@ ROS2 é um **framework open-source para desenvolvimento de robôs**. Ele fornece
 
 ---
 
+## Onde dá para rodar?
+
+> **No ARARABOTS usamos exclusivamente ROS2 Humble + Ubuntu 22.04 LTS.** Não use outras distros (Foxy, Iron, Jazzy) — nossos pacotes não foram testados nelas e quebram em coisas sutis.
+
+| Ambiente | Status no time | Observação |
+|----------|----------------|------------|
+| **Ubuntu 22.04 LTS (nativo)** | ✅ Recomendado | Melhor experiência, sem camadas de compatibilidade |
+| **WSL2 com Ubuntu 22.04 (Windows 10/11)** | ✅ Funciona bem | Use o filesystem Linux (`~/`), **não** `/mnt/c/` — compilar lá é muito mais lento. Para GUI precisa de WSLg (vem por padrão no Win 11) |
+| **Windows nativo** | ❌ Não use | Instalação difícil e sem suporte do time |
+| **macOS** | ❌ Não use | ROS2 no Mac é experimental, builds da comunidade |
+| **Outras versões de Ubuntu (20.04, 24.04)** | ❌ Não use | Forçariam outra distro do ROS2 (Foxy / Jazzy), incompatível com nossos pacotes |
+
+**Quem está no Windows:** instale o WSL2 com Ubuntu 22.04. No PowerShell como administrador:
+
+```powershell
+wsl --install -d Ubuntu-22.04
+```
+
+Confirme sua versão antes de prosseguir:
+
+```bash
+lsb_release -a              # deve mostrar Ubuntu 22.04
+echo $ROS_DISTRO            # depois de instalar, deve mostrar "humble"
+```
+
+---
+
 ## Conceitos Fundamentais
 
 ### 1. Nodes (Nós)
